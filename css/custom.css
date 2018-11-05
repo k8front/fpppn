@@ -1,0 +1,46 @@
+/*убираем скролл бар (или можно включить, задав в последней строчке ширину. Скроллбар уже стилизованный)*/
+::-webkit-scrollbar-button {transition: 300ms !important; width:10px;height:0px;} 
+::-webkit-scrollbar-track {background:#262b30 ;}
+::-webkit-scrollbar-thumb {-webkit-border-radius:10px; border-radius:10px;background:#596672;}
+::-webkit-resizer {width:10px;height:8px;} 
+::-webkit-scrollbar {width:0px;} 
+
+html { overflow-x: hidden; } 
+body { overflow-x: hidden; } 
+
+/*отключаем выделение элементов*/
+button, a, input {
+     outline: 0;
+    }  
+/*отключаем стандартные стили элементов*/
+.w-radio-input, .w-select, .w-input, .w-checkbox-input {
+    -webkit-appearance: none;
+    }
+/*стилизуем чекбокс или радиокнопку*/
+input[type=checkbox]:checked, input[type=radio]:checked {
+background-image: url(http://k8b.ru/wp-content/themes/k8b/assets/img/btn-checking.png);
+background-position: 50% 50%;
+background-size: contain;
+background-repeat: no-repeat;
+transition:  0.2s;
+}
+input[type=checkbox]:checked ~ .check-btn-label, input[type=radio]:checked ~ .check-btn-label {
+color: #262b30;
+font-weight: 700;
+}
+input[type=checkbox]:hover ~ .check-btn-label, input[type=radio]:hover ~ .check-btn-label {
+color: #262b30;
+font-weight: 700;
+}
+/*заполняем изображением img*/
+.img-1, .img-2, .img-3, .img-4, .img-5, .img-6, .img-7 {
+	object-fit: cover;
+}  
+.btn--next {
+	opacity: 100;
+}
+/*красный input при ошибке*/
+.input.req:invalid {
+  border-width: 0px 0px 2px;
+  border-color: #f8305f;
+}
