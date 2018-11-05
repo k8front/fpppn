@@ -18,7 +18,7 @@ button, a, input {
     }
 /*стилизуем чекбокс или радиокнопку*/
 input[type=checkbox]:checked, input[type=radio]:checked {
-background-image: url(http://k8b.ru/wp-content/themes/k8b/assets/img/btn-checking.png);
+background-image: url(https://k8front.github.io/fpppn/img/btn-checking.png);
 background-position: 50% 50%;
 background-size: contain;
 background-repeat: no-repeat;
