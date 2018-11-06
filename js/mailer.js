@@ -20,7 +20,7 @@ let str = "<b>Данные формы:</b> <br> <b>Страница:</b> http://
         str += "<br><b>Номер телефона:</b> " + "" + $('input[data-name = "Номер телефона"]').val();
         $.ajax({
             method: "POST",
-            url: "http://k8b.ru/wp-content/themes/k8b/assets/send.php",
+            url: "https://k8d.ru/send.php",
             data: {mailText: str},
             success: function (data, textStatus) {
                 window.location.replace("/thanks");
